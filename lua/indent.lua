@@ -50,3 +50,8 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'java',
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
+
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'nix',
+  command = 'setlocal tabstop=2 shiftwidth=2 et',
+})
