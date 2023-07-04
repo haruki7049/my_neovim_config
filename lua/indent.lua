@@ -10,7 +10,7 @@
 -- ')
 
 -- sample for any langs which needed 4 space indents
--- vim.apt.nvim_create_autocmd({'FileType'}, {
+-- vim.api.nvim_create_autocmd({'FileType'}, {
 --   pattern = '',
 --   command = 'setlocal tabstop=4 shiftwidth=4 et',
 -- })
@@ -22,31 +22,31 @@ vim.api.nvim_create_autocmd({'FileType'}, {
 })
 
 -- rust
-vim.apt.nvim_create_autocmd({'FileType'}, {
+vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'rust',
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
 
 -- html
-vim.apt.nvim_create_autocmd({'FileType'}, {
+vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'html',
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
 
 -- C lang
-vim.apt.nvim_create_autocmd({'FileType'}, {
+vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'c',
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
 
 -- bounce shell OR bash
-vim.apt.nvim_create_autocmd({'FileType'}, {
+vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'sh',
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
 
 -- java
-vim.apt.nvim_create_autocmd({'FileType'}, {
+vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'java',
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
