@@ -3,3 +3,5 @@
 --vim.g.loaded_netrwPlugin = 1
 
 vim.opt.number = true
+vim.opt.syntax = 'on'
+vim.cmd('colorscheme default')
