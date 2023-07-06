@@ -1,5 +1,6 @@
 return {
   -- FILE VIEWER
+  --nvim-tree.lua
   {
     "nvim-tree/nvim-tree.lua",
     config = function()
@@ -8,7 +9,7 @@ return {
   },
 
   -- COLORSCHEME
-  -- zephyr colorscheme
+  --zephyr colorscheme
   {
     "nvimdev/zephyr-nvim",
     lazy = false,
@@ -17,8 +18,7 @@ return {
       vim.cmd('colorscheme zephyr')
     end
   },
-
-  -- dracula colorscheme
+  --dracula colorscheme
   --{
   --  "Mofiqul/dracula.nvim",
   --  lazy = false,
@@ -27,8 +27,7 @@ return {
   --    vim.cmd('colorscheme dracula')
   --  end
   --},
-
-  -- tokyonight colorscheme
+  --tokyonight colorscheme
   --{
   --  "folke/tokyonight.nvim",
   --  lazy = false,
@@ -36,6 +35,31 @@ return {
   --  config = function()
   --    vim.cmd('colorscheme tokyonight')
   --  end
+  --},
+
+  -- underbar plugin, barbar.nvim
+  --{
+  --  "romgrk/barbar.nvim",
+  --  dependencies = {
+  --    'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+  --    'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+  --  },
+  --  config = function()
+  --    require('config/barbar')
+  --  end
+  --},
+
+  -- FOR Git
+  --control Git, git.nvim
+  --{
+  --  "dinhhuy258/git.nvim",
+  --  config = function()
+  --    require('config/git')
+  --  end
+  --},
+  -- Gitsigns.nvim
+  --{
+  --  "lewin6991/gitsigns.nvim",
   --},
 
   {
