@@ -1,4 +1,10 @@
 return {
+  -- LSP
+  --config, nvim-lspconfig
+  {
+    "neovim/nvim-lspconfig",
+  },
+
   -- FILE VIEWER
   --nvim-tree.lua
   {
