@@ -1,10 +1,11 @@
 return {
-  -- {
-  --   "nvim-tree/nvim-tree.lua",
-  --   config = function()
-  --     require('config/nvim-tree')
-  --   end
-  -- },
+  -- FILE VIEWER
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require('config/nvim-tree')
+    end
+  },
 
   -- COLORSCHEME
   -- zephyr colorscheme
