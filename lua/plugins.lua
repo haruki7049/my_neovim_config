@@ -4,6 +4,14 @@ return {
   {
     "neovim/nvim-lspconfig",
   },
+  --mason.nvim
+  {
+    "williamboman/mason.nvim",
+  },
+  --mason-lspconfig
+  {
+    "williamboman/mason-lspconfig.nvim",
+  },
 
   -- FILE VIEWER
   --nvim-tree.lua
