@@ -13,6 +13,15 @@ return {
     "williamboman/mason-lspconfig.nvim",
   },
 
+  --STATUSLINE
+  --lualine.nvim
+  {
+    "nvim-lualine/lualine.nvim",
+    config = function()
+      require('config/lualine')
+    end
+  },
+
   -- FILE VIEWER
   --nvim-tree.lua
   {
@@ -75,9 +84,4 @@ return {
   --{
   --  "lewin6991/gitsigns.nvim",
   --},
-
-  {
-    "j-hui/fidget.nvim",
-    tag = "legacy",
-  },
 }
