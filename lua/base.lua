@@ -1,4 +1,4 @@
--- disable netrw
+--disable netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -6,8 +6,12 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.syntax = 'on'
--- disable default colorscheme
+--disable default colorscheme
 --vim.cmd('colorscheme default')
+
+-- CACHE
+vim.opt.backup = false
+vim.opt.swapfile = false
 
 -- ENCODE
 -- USE UTF-8
