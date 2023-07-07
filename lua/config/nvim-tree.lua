@@ -9,4 +9,7 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = true,
   },
+
+  --KEYMAP for nvim-tree
+  vim.keymap.set('n', '<leader>t', '<cmd>NvimTreeToggle<cr>'),
 })

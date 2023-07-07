@@ -6,4 +6,7 @@ require('mason').setup({
       package_uninstalled = "✗",
     },
   },
+
+  --KEYMAP for mason
+  vim.keymap.set('n', '<leader>MM', '<cmd>Mason<cr>'),
 })
