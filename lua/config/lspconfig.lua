@@ -4,9 +4,20 @@ return {
       ['rust-analyzer'] = {},
     },
   }),
-  --require('lspconfig').lua_language_server.setup({
-  --  settings = {
-  --    ['lua-language-server'] = {},
-  --  },
-  --}),
+  require('lspconfig').lua_ls.setup({
+    settings = {
+      Lua = {
+        --runtime = {
+        --},
+        diagnostics = {
+          globals = {
+            'vim',
+          },
+        },
+        telemetry = {
+          enable = true,
+        },
+      },
+    },
+  }),
 }

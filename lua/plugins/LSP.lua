@@ -16,6 +16,9 @@ return {
   --mason-lspconfig
   {
     "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require('config/mason-lspconfig')
+    end
   },
 
   --STATUSLINE
