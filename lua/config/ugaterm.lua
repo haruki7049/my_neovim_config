@@ -19,5 +19,7 @@ return {
     --end,
   }),
 
-  vim.keymap.set('n', '<leader>t', '<cmd>UgatermToggle<cr>')
+  vim.keymap.set('n', '<leader>t', '<cmd>UgatermToggle<cr>'),
+  vim.keymap.set('n', '<leader>y', '<cmd>UgatermNew<cr>'),
+  vim.keymap.set('n', '<leader>u', '<cmd>UgatermDelete<cr>'),
 }
