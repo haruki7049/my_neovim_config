@@ -22,4 +22,19 @@ return {
   vim.keymap.set('n', '<leader>t', '<cmd>UgatermToggle<cr>'),
   vim.keymap.set('n', '<leader>y', '<cmd>UgatermNew<cr>'),
   vim.keymap.set('n', '<leader>u', '<cmd>UgatermDelete<cr>'),
+
+  vim.keymap.set('t', '<ESC>', '<C-\\><C-n>')
+
+  vim.api.nvim_create_autocmd({'TermOpen'}, {
+    pattern = '*',
+    command = ':startinsert',
+  })
+  vim.api.nvim_create_autocmd({'TermOpen'}, {
+    pattern = '*',
+    command = 'setlocal norelativenumber',
+  })
+  vim.api.nvim_create_autocmd({'TermOpen'}, {
+    pattern = '*',
+    command = 'setlocal nonumber',
+  })
 }
