@@ -4,6 +4,7 @@ return {
   require("plugins/Git"),
   require("plugins/FileViewer"),
   require("plugins/Terminal"),
+  require("plugins/IME"),
 
 
 
