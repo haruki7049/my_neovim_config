@@ -1,9 +1,28 @@
 return {
   -- nvim's terminal wrapper, ugaterm
-  --{
-  --  "uga-rosa/ugaterm.nvim",
-  --  config = function()
-  --    require('config/ugaterm')
-  --  end
-  --},
+  {
+    "uga-rosa/ugaterm.nvim",
+    config = function()
+      require('config/ugaterm')
+    end,
+    init = function()
+      vim.keymap.set('n', '<leader>t', '<cmd>UgatermOpen<cr>');
+      vim.keymap.set('n', '<leader>r', '<cmd>UgatermHide<cr>');
+
+      vim.keymap.set('t', '<ESC>', '<C-\\><C-n>');
+
+      --vim.api.nvim_create_autocmd({'UgatermEnter'}, {
+      --  pattern = '*',
+      --  command = ':startinsert',
+      --});
+      --vim.api.nvim_create_autocmd({'UgatermEnter'}, {
+      --  pattern = '*',
+      --  command = 'setlocal norelativenumber',
+      --});
+      --vim.api.nvim_create_autocmd({'UgatermEnter'}, {
+      --  pattern = '*',
+      --  command = 'setlocal nonumber',
+      --});
+    end,
+  },
 }
