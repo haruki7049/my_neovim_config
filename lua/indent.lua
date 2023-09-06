@@ -51,7 +51,14 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
 
+-- Nix
 vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'nix',
   command = 'setlocal tabstop=2 shiftwidth=2 et',
+})
+
+-- Nu_Shell
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'nu',
+  command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
