@@ -5,7 +5,7 @@ return {
   require("plugins/FileViewer"),
   require("plugins/Terminal"),
   require("plugins/IME"),
-
+  require("plugins/StatusLine"),
 
 
   -- underbar plugin, barbar.nvim
