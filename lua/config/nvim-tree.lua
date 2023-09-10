@@ -5,7 +5,7 @@ return {
       enable = true,
     },
     view = {
-      width = 15,
+      width = 20,
     },
     renderer = {
       group_empty = true,
