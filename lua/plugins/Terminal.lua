@@ -9,12 +9,6 @@ return {
   --    vim.keymap.set('n', '<leader>t', '<cmd>UgatermOpen<cr>');
   --    vim.keymap.set('n', '<leader>r', '<cmd>UgatermHide<cr>');
   --
-  --    vim.keymap.set('t', '<ESC>', '<C-\\><C-n>');
-  --
-  --    --vim.api.nvim_create_autocmd({'UgatermEnter'}, {
-  --    --  pattern = '*',
-  --    --  command = ':startinsert',
-  --    --});
   --    --vim.api.nvim_create_autocmd({'UgatermEnter'}, {
   --    --  pattern = '*',
   --    --  command = 'setlocal norelativenumber',
@@ -33,4 +27,12 @@ return {
   --  init = function()
   --  end,
   --},
+
+  {
+    "akinsho/toggleterm.nvim",
+    config = function()
+    end,
+    init = function()
+    end,
+  }
 }
