@@ -28,11 +28,23 @@ return {
   --  end,
   --},
 
+  --{
+  --  "akinsho/toggleterm.nvim",
+  --  config = function()
+  --  end,
+  --  init = function()
+  --  end,
+  --},
+
   {
-    "akinsho/toggleterm.nvim",
+    "numToStr/FTerm.nvim",
     config = function()
+      require('config/FTerm')
     end,
     init = function()
+      -- keyconfig
+      vim.keymap.set('n', '<leader>t', '<cmd>lua require("FTerm").toggle()<cr>')
+      vim.keymap.set('t', '<leader>t', '<cmd>lua require("FTerm").toggle()<cr>')
     end,
-  }
+  },
 }
