@@ -19,5 +19,5 @@ vim.opt.fileencoding = 'utf-8'
 vim.opt.helplang = "ja", "en"
 
 -- disabling netrw
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+--vim.g.loaded_netrw = 1
+--vim.g.loaded_netrwPlugin = 1
