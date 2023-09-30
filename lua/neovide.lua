@@ -1,4 +1,4 @@
-font_name = "UDEV Gothic NF:h14"
+local font_name = "UDEV Gothic NF:h14"
 
 if vim.g.neovide then
   vim.o.guifont = font_name
