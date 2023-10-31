@@ -1,17 +1,28 @@
 return {
   -- FILE VIEWER
+  --{
+  --  "nvim-tree/nvim-tree.lua",
+  --  dependencies = {
+  --    "nvim-tree/nvim-web-devicons"
+  --  },
+  --  config = function()
+  --    require('config/nvim-tree')
+  --  end,
+  --  init = function()
+  --    vim.g.loaded_netrw = 1;
+  --    vim.g.loaded_netrwPlugin = 1;
+  --    vim.api.nvim_set_keymap("n", "<leader>f", "<cmd>NvimTreeToggle<cr>", {noremap = true});
+  --  end,
+  --},
   {
-    "nvim-tree/nvim-tree.lua",
+    "nvim-telescope/telescope-file-browser.nvim",
     dependencies = {
-      "nvim-tree/nvim-web-devicons"
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim",
     },
     config = function()
-      require('config/nvim-tree')
     end,
     init = function()
-      vim.g.loaded_netrw = 1;
-      vim.g.loaded_netrwPlugin = 1;
-      vim.api.nvim_set_keymap("n", "<leader>f", "<cmd>NvimTreeToggle<cr>", {noremap = true});
     end,
   },
 
