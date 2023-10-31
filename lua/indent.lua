@@ -74,3 +74,9 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'nu',
   command = 'setlocal tabstop=4 shiftwidth=4 et',
 })
+
+-- typescript's react
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'typescriptreact',
+  command = 'setlocal tabstop=2 shiftwidth=2 et',
+})
