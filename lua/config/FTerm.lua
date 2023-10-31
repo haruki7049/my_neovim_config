@@ -1,7 +1,7 @@
 return {
   require("FTerm").setup({
     ft = 'FTerm',
-    cmd = 'nu',
+    cmd = 'pwsh -NoLogo',
     border = 'double',
     dimensions = {
       height = 0.9,
