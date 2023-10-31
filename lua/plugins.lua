@@ -6,6 +6,7 @@ return {
   require("plugins/Terminal"),
   require("plugins/IME"),
   require("plugins/StatusLine"),
+  require("plugins/comment"),
 
 
   -- underbar plugin, barbar.nvim
