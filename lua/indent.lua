@@ -51,6 +51,12 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   command = 'setlocal tabstop=2 shiftwidth=2 et',
 })
 
+-- PowerShell
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'ps1',
+  command = 'setlocal tabstop=4 shiftwidth=4 et',
+})
+
 -- java
 vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'java',
