@@ -29,3 +29,7 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = '*',
   command = 'set formatoptions-=c',
 })
+
+-- disabling statusline
+vim.opt.laststatus = 0
+vim.opt.cmdheight = 0
