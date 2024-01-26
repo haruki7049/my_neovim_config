@@ -7,7 +7,7 @@ return {
   require("plugins/IME"),
   require("plugins/StatusLine"),
   require("plugins/comment"),
-
+  require("plugins/LanguageSupport"),
 
   -- underbar plugin, barbar.nvim
   --{
