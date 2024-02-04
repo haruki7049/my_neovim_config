@@ -80,3 +80,9 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'typescriptreact',
   command = 'setlocal tabstop=2 shiftwidth=2 et',
 })
+
+-- Gleam
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'gleam',
+  command = 'setlocal tabstop=2 shiftwidth=2 et',
+})
