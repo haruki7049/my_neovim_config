@@ -4,7 +4,7 @@ return {
 
   vim.api.nvim_exec([[
     call skkeleton#config({
-      \   'globalJisyo': '~/.skk/SKK-JISYO.L',
+      \   'globalJisyo': '~/.skk/.skk-jisyo',
       \   'eggLikeNewline': v:true,
       \ })
   ]], false);
