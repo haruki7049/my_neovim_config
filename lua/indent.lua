@@ -92,3 +92,9 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'lisp',
   command = 'setlocal tabstop=2 shiftwidth=2 et',
 })
+
+-- TypeScript
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'typescript',
+  command = 'setlocal tabstop=2 shiftwidth=2 et',
+})
