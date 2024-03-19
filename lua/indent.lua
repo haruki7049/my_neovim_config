@@ -98,3 +98,9 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   pattern = 'typescript',
   command = 'setlocal tabstop=2 shiftwidth=2 et',
 })
+
+-- nginx
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'nginx',
+  command = 'setlocal tabstop=4 shiftwidth=4 et',
+})
